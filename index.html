@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Venki's Store</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: Arial, sans-serif;
+}
+
+body{
+    background:#111;
+    color:white;
+}
+
+/* Header */
+header{
+    background:#000;
+    padding:20px 8%;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    position:sticky;
+    top:0;
+}
+
+.logo{
+    font-size:30px;
+    font-weight:bold;
+}
+
+.logo span{
+    color:gold;
+}
+
+nav a{
+    text-decoration:none;
+    color:white;
+    margin-left:25px;
+    font-size:18px;
+}
+
+nav a:hover{
+    color:gold;
+}
+
+/* Hero */
+.hero{
+    text-align:center;
+    padding:100px 20px;
+    background:linear-gradient(to right,#111,#1a1a1a);
+}
+
+.hero h1{
+    font-size:55px;
+}
+
+.hero span{
+    color:gold;
+}
+
+.hero p{
+    margin-top:15px;
+    font-size:20px;
+    color:#ccc;
+}
+
+.btn{
+    display:inline-block;
+    margin-top:25px;
+    padding:14px 30px;
+    background:gold;
+    color:black;
+    text-decoration:none;
+    border-radius:10px;
+    font-weight:bold;
+}
+
+/* Products */
+.products{
+    padding:70px 8%;
+}
+
+.products h2{
+    text-align:center;
+    margin-bottom:40px;
+    font-size:35px;
+}
+
+.product-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:25px;
+}
+
+.card{
+    background:#1d1d1d;
+    border-radius:15px;
+    overflow:hidden;
+    transition:0.3s;
+}
+
+.card:hover{
+    transform:translateY(-8px);
+}
+
+.card img{
+    width:100%;
+    height:250px;
+    object-fit:cover;
+}
+
+.card-content{
+    padding:20px;
+}
+
+.price{
+    color:gold;
+    font-size:22px;
+    margin:10px 0;
+}
+
+.coming{
+    text-align:center;
+    margin-top:25px;
+    color:#999;
+}
+
+/* About */
+.about{
+    padding:70px 8%;
+    text-align:center;
+    background:#181818;
+}
+
+.about h2{
+    margin-bottom:15px;
+}
+
+/* Contact */
+.contact{
+    padding:70px 8%;
+}
+
+.contact h2{
+    text-align:center;
+    margin-bottom:30px;
+}
+
+.contact-box{
+    background:#1d1d1d;
+    padding:30px;
+    border-radius:15px;
+    max-width:700px;
+    margin:auto;
+    line-height:2;
+}
+
+/* Footer */
+footer{
+    background:#000;
+    text-align:center;
+    padding:20px;
+    margin-top:40px;
+    color:#aaa;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <div class="logo">Venki's <span>Store</span></div>
+
+    <nav>
+        <a href="#">Home</a>
+        <a href="#products">Shop</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
+
+<section class="hero">
+    <h1>Welcome to <span>Venki's Store</span></h1>
+
+    <p>
+        Quality Products at the Best Price 🛍️ <br>
+        T-Shirts 👕 | Mugs ☕ | More Products Coming Soon ✨
+    </p>
+
+    <a href="https://wa.me/919739949105" class="btn">
+        Order on WhatsApp
+    </a>
+</section>
+
+<section class="products" id="products">
+    <h2>Our Products</h2>
+
+    <div class="product-grid">
+
+        <!-- Product 1 -->
+        <div class="card">
+            <img src="mug.jfif"
+            alt="Product">
+
+            <div class="card-content">
+                <h3>Custom Mug</h3>
+                <p class="price">₹299</p>
+
+                <a href="https://wa.me/919739949105" class="btn">
+                    Order Now
+                </a>
+            </div>
+        </div>
+
+        <!-- Product 2 -->
+        <div class="card">
+            <img src="mug.jfif"
+            alt="Product">
+
+            <div class="card-content">
+                <h3>T-Shirt</h3>
+                <p class="price">₹699</p>
+
+                <a href="https://wa.me/919739949105" class="btn">
+                    Order Now
+                </a>
+            </div>
+        </div>
+
+    </div>
+
+    <p class="coming">
+        More products will be added soon 🚀
+    </p>
+</section>
+
+<section class="about" id="about">
+    <h2>About Venki's Store</h2>
+
+    <p>
+        Welcome to Venki's Store. We provide quality products
+        at the best prices. Stay connected for new arrivals
+        and exciting products.
+    </p>
+</section>
+
+<section class="contact" id="contact">
+    <h2>Customer Support</h2>
+
+    <div class="contact-box">
+
+        <p><strong>WhatsApp:</strong> 9739949105</p>
+
+        <p><strong>Email:</strong>
+        venkateshvenki2149@gmail.com</p>
+
+        <p><strong>Address:</strong><br>
+        3564/B, 6th C Main Road,<br>
+        Gayathrinagar, Bangalore – 560021
+        </p>
+
+    </div>
+</section>
+
+<footer>
+    © 2026 Venki's Store | All Rights Reserved
+</footer>
+
+</body>
+</html>
